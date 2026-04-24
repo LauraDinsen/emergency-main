@@ -1,0 +1,80 @@
+:root {
+  /* Background color */
+  --color-bg: #d3cfc1;
+
+  /* Header background color */
+  --color-head-bg: #f2f2f2;
+
+  /* Logotype */
+  --color-logotype-bg: #f2f2f2;
+  --color-text-logotype: #000000;
+  --font-logotype-size: 1rem;
+
+  /* Global menu */
+  --color-menu-bg: #f2f2f2;
+  /* Links */
+  --color-link-bg: #ffffff;
+  --color-link-hover: #fff;
+  --color-link-active: #ffffff;
+  --border-radius-links: 1px;
+
+  /* Headlines (size)*/
+  --font-h1-size: 1rem;
+  --font-h2-size: 1.2rem;
+  --font-h3-size: 1rem;
+
+  --headline2-size: 1rem;
+  --headline3-size: 1rem;
+  --font-sub1-size: 1rem;
+
+  /* Tekst */
+  --color-text: #000;
+
+  /* Andet tekst */
+  --followup-text-size: 1rem;
+
+  /*  Margins */
+  --margin-head-bottom: 5px;
+
+  /* Borders */
+  --border-radius: 5px;
+
+  /* Cards */
+  --color-card-bg: #e3e1d8;
+  --color-card-bg-inverted: ##72b4d9;
+  --color-cta-card-bg-inverted: #c0bfb9;
+
+  /* Fonts & font weights*/
+  --font-family-sans: ui-sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 300;
+  --font-weight-light: 200;
+
+  /* Infographics background colors*/
+  --color-info-bg: #a1a19c;
+}
+
+html.dark {
+  /* Background color */
+  --color-bg: #868275;
+
+  /* Header background color */
+  --color-head-bg: #9e9999;
+
+  /* Global menu */
+  --color-menu-bg: #9e9999;
+
+  .info-graphic,
+  .info-text {
+    background-color: var(--color-info-bg);
+
+    --color-menu-bg: #b3a9a9;
+    /* Links */
+    --color-link-bg: #ffffffbc;
+    --color-link-hover: #ffffffbc;
+    --color-link-active: #ffffffbc;
+
+    --color-info-bg: #8f8c88;
+  }
+}
