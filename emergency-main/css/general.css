@@ -31,20 +31,21 @@ main section {
   border-radius: var(--border-radius);
 }
 h1 {
-  font-size: var(--font-h1-size);
+  font-size: 40px;
   font-weight: var(--font-weight-bold);
   color: var(--color-text-inverted);
   margin: 5px 0;
   line-height: 1.3rem;
   text-align: left;
+  margin-top: 20px;
 }
 
 #instruction h1,
 #register h1 {
   margin: 40px 0 20px 0;
   padding: 15px 30px;
-  background-color: var(--color-head-bg);
-  font-size: var(--font-h2-size);
+  background-color: rgb(244, 244, 244);
+  font-size: 40px;
 }
 #instruction p {
   grid-column: 1/-1;
@@ -58,10 +59,10 @@ h1 {
   color: var(--color-text-inverted);
 }
 h2 {
-  font-size: var(--headline2-size);
+  font-size: 20px;
 }
 h3 {
-  font-size: var(--headline3-size);
+  font-size: 20px;
 }
 main > h1 {
   width: calc(80% - 6rem);
@@ -124,4 +125,31 @@ footer {
 
 footer a {
   font-size: 0.7rem;
+}
+#theme-toggle {
+  --h: 2rem;
+  --w: 3rem;
+  font: inherit;
+  appearance: none;
+  background: gainsboro;
+  height: var(--h);
+  width: var(--w);
+  border: 1px solid #000;
+  cursor: pointer;
+  border-radius: 9999px;
+}
+#theme-toggle::before {
+  content: "";
+  display: block;
+  padding: 3px;
+  height: 100%;
+  aspect-ratio: 1;
+  background: gray content-box;
+  border-radius: inherit;
+  transition: 0.3s;
+}
+
+#theme-toggle:checked::before {
+  background-color: green;
+  translate: calc(var(--w) - var(--h));
 }
